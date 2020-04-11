@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Cosmos (21.0.0)
+  - DatePickerDialog (3.0)
+  - EVReflection (5.10.1):
+    - EVReflection/Core (= 5.10.1)
+  - EVReflection/Alamofire (5.10.1):
+    - Alamofire
+    - EVReflection/Core
+  - EVReflection/Core (5.10.1)
+  - EVReflection/CoreData (5.10.1):
+    - EVReflection/Core
+  - IQKeyboardManagerSwift (6.5.5)
+  - MBProgressHUD (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Cosmos
+  - DatePickerDialog
+  - EVReflection
+  - EVReflection/Alamofire
+  - EVReflection/CoreData
+  - IQKeyboardManagerSwift
+  - MBProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - DatePickerDialog
+    - EVReflection
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Cosmos: 3dfb6e4ba48bd48b8c9aa2a77048ae11ed114f96
+  DatePickerDialog: 03dbb8350bfa80302ab2a8c83cee1fec70184444
+  EVReflection: 8124de482178d34ccd56473e16cd95990f9a1113
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+
+PODFILE CHECKSUM: f60f0ea00ad512cfbd6ba9ce01ec8ec84075c8a5
+
+COCOAPODS: 1.8.4
