@@ -58,6 +58,7 @@
 		A45DEA1E24424C7B00FA5D28 /* EmployeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DEA1D24424C7B00FA5D28 /* EmployeeDetailsViewController.swift */; };
 		A45DEA2024424DB000FA5D28 /* EmployeeDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DEA1F24424DB000FA5D28 /* EmployeeDetailsVM.swift */; };
 		A45DEA352442713800FA5D28 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DEA342442713800FA5D28 /* ThirdViewController.swift */; };
+		A45DEA702442D20700FA5D28 /* ThirdVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DEA6F2442D20700FA5D28 /* ThirdVM.swift */; };
 		AA2160C10DA78809584AA265 /* Pods_CRUD_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533654EDCBFA58D9DB7630B0 /* Pods_CRUD_Application.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,7 @@
 		A45DEA1D24424C7B00FA5D28 /* EmployeeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsViewController.swift; sourceTree = "<group>"; };
 		A45DEA1F24424DB000FA5D28 /* EmployeeDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsVM.swift; sourceTree = "<group>"; };
 		A45DEA342442713800FA5D28 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		A45DEA6F2442D20700FA5D28 /* ThirdVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVM.swift; sourceTree = "<group>"; };
 		E46B21B6E5709C7D0C322965 /* Pods-CRUD Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRUD Application.release.xcconfig"; path = "Target Support Files/Pods-CRUD Application/Pods-CRUD Application.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -292,6 +294,7 @@
 				A45DEA062442273B00FA5D28 /* EmployeeListViewModel.swift */,
 				A45DEA172442343900FA5D28 /* EmployeeCellViewModel.swift */,
 				A45DEA1F24424DB000FA5D28 /* EmployeeDetailsVM.swift */,
+				A45DEA6F2442D20700FA5D28 /* ThirdVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				A45DE9F324421DE100FA5D28 /* APITokenManager.swift in Sources */,
 				A45DE9FA24421DE100FA5D28 /* APIManager.swift in Sources */,
 				A45DE9AE244215B100FA5D28 /* EmployeeList.swift in Sources */,
+				A45DEA702442D20700FA5D28 /* ThirdVM.swift in Sources */,
 				A45DEA1C24423EDF00FA5D28 /* UIViewController+Extensions.swift in Sources */,
 				A45DE9ED24421DE100FA5D28 /* UIImageViewX.swift in Sources */,
 				A45DE9EE24421DE100FA5D28 /* UIViewX.swift in Sources */,

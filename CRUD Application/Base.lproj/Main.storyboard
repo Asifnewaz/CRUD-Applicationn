@@ -176,7 +176,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ghQ-RD-E1Y">
-                                        <rect key="frame" x="15" y="0.0" width="384" height="36"/>
+                                        <rect key="frame" x="15" y="10" width="384" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="hsX-gC-fUw"/>
                                         </constraints>
@@ -185,9 +185,12 @@
                                             <segment title="&gt; 1 Lakh"/>
                                             <segment title="&lt;  1 Lakh"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="salaryCaregory:" destination="3tM-fn-gfc" eventType="valueChanged" id="7p6-ei-HPU"/>
+                                        </connections>
                                     </segmentedControl>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zIc-TW-Msx">
-                                        <rect key="frame" x="0.0" y="35" width="414" height="701"/>
+                                        <rect key="frame" x="0.0" y="84" width="414" height="652"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EmployeeCell2" rowHeight="100" id="99O-RR-tOh" customClass="EmployeeCell" customModule="CRUD_Application" customModuleProvider="target">
@@ -261,16 +264,25 @@
                                             <outlet property="delegate" destination="3tM-fn-gfc" id="52A-Wo-bo7"/>
                                         </connections>
                                     </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3P-2j-OCr">
+                                        <rect key="frame" x="20" y="53" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="zIc-TW-Msx" secondAttribute="bottom" id="98V-Mh-d2R"/>
                                     <constraint firstItem="zIc-TW-Msx" firstAttribute="leading" secondItem="HOj-rg-93g" secondAttribute="leading" id="C8a-ql-1dX"/>
-                                    <constraint firstItem="ghQ-RD-E1Y" firstAttribute="top" secondItem="HOj-rg-93g" secondAttribute="top" id="Mf5-QV-g3A"/>
+                                    <constraint firstItem="d3P-2j-OCr" firstAttribute="leading" secondItem="HOj-rg-93g" secondAttribute="leading" constant="20" id="KRX-Of-wBa"/>
+                                    <constraint firstItem="ghQ-RD-E1Y" firstAttribute="top" secondItem="HOj-rg-93g" secondAttribute="top" constant="10" id="Mf5-QV-g3A"/>
+                                    <constraint firstItem="d3P-2j-OCr" firstAttribute="top" secondItem="ghQ-RD-E1Y" secondAttribute="bottom" constant="8" id="U0F-0Y-wSW"/>
                                     <constraint firstItem="ghQ-RD-E1Y" firstAttribute="leading" secondItem="HOj-rg-93g" secondAttribute="leading" constant="15" id="eae-Y8-h2v"/>
                                     <constraint firstAttribute="trailing" secondItem="zIc-TW-Msx" secondAttribute="trailing" id="ggz-2x-5jf"/>
                                     <constraint firstAttribute="trailing" secondItem="ghQ-RD-E1Y" secondAttribute="trailing" constant="15" id="r5p-xe-LV4"/>
-                                    <constraint firstItem="zIc-TW-Msx" firstAttribute="top" secondItem="ghQ-RD-E1Y" secondAttribute="bottom" id="y2c-3t-PXM"/>
+                                    <constraint firstAttribute="trailing" secondItem="d3P-2j-OCr" secondAttribute="trailing" constant="20" id="wFA-1m-CKS"/>
+                                    <constraint firstItem="zIc-TW-Msx" firstAttribute="top" secondItem="d3P-2j-OCr" secondAttribute="bottom" constant="10" id="xFX-9U-ju6"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -285,6 +297,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="zIc-TW-Msx" id="IKV-vp-Vho"/>
+                        <outlet property="totalNumberLabel" destination="d3P-2j-OCr" id="Jpn-kC-Qbm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiP-ew-PT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -14,7 +14,6 @@ class EmployeeList: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var progressHUD: ProgressHUDManager?
-    var isCardListEmpty: Bool = false
     
     lazy var viewModel : EmployeeListViewModel = {
         let viewModel = EmployeeListViewModel()
@@ -97,7 +96,11 @@ class EmployeeList: UIViewController {
     }
     
     @IBAction func filterAction(_ sender: UIBarButtonItem) {
-        self.alertWithMessage(title: "Sorry", message: "Task was not clear and understandable.") 
+        self.alertWithMessage(title: "Sorry", message: "Task was not clear and understandable. I am connecting third VC here.") { [weak self] isOk  in
+            let storyBoad = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let detailsVC = storyBoad.instantiateViewController(withIdentifier: "ThirdViewController") as! ThirdViewController
+            self?.navigationController?.show(detailsVC, sender: nil)
+        }
     }
     
     

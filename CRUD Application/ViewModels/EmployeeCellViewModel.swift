@@ -31,4 +31,11 @@ class EmployeeCellViewModel {
         }
         return ""
     }
+    
+    func getConvertedSalary() -> Double {
+        if let salary = employeeSalary, let convertedSalary = Double(salary) {
+            return convertedSalary
+        }
+        return 0.0
+    }
 }

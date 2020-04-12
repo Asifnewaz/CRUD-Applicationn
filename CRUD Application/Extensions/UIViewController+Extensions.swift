@@ -19,11 +19,10 @@ extension UIViewController {
         view.endEditing(true)
     }
     
-    public func alertWithMessage(title: String? = nil, message: String? = nil) {
+    public func alertWithMessage(title: String? = nil, message: String? = nil, completion: @escaping ((Bool) -> Void) = { _ in }) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
         alert.addAction(UIAlertAction(title: "Ok", style: .default) { action in
-            print("ok")
+            completion(true)
         })
         navigationController?.present(alert, animated: true)
     }

@@ -29,4 +29,11 @@ extension Employee {
         }
         return ""
     }
+    
+    func getConvertedSalary() -> Double {
+        if let salary = employee_salary, let convertedSalary = Double(salary) {
+            return convertedSalary
+        }
+        return 0.0
+    }
 }
