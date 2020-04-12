@@ -63,7 +63,7 @@ class EmployeeList: UIViewController {
         self.viewModel.editEmployeeInfo = { [weak self] data in
             if let id = data.id {
                 self?.alertWithTextField(title: "Edit", message: "", placeholder: "Employee name") { [weak self] result in
-                    if let name =  result{
+                    if let name =  result, name.isNotEmpty {
                         self?.viewModel.updateEmployeeName(id: id, name: name)
                     }
                 }
